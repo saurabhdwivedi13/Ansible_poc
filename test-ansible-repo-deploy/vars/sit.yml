@@ -1,0 +1,3 @@
+TES_DDL_DB_URL: test123SIT@abc.com,9000
+MGR_ID: abc1SIT,def2SIT
+TES_DML_DB_URL: testDML1234@abc.com,9000

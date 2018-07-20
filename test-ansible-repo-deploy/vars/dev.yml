@@ -1,0 +1,3 @@
+TEST_DDL_DB_URL: test123@abc.com,9000
+MGR_ID: abc1,def2
+TES_DML_DB_URL: testDML@abc.com,9000
