@@ -1,0 +1,18 @@
+ -
+  name: Export Environment Variable and Invoke java class
+  hosts: App_Server_{{ currentEnvironment }}
+ 
+  tasks:
+         
+     -
+       name: include variables    
+       include_vars:
+          file: "vars/{{ currentEnvironment }}.yml"
+          name: env_vars
+
+
+     -
+       name: change Dir and run Java
+       command: sh startServer.sh  chdir=/home/osboxes/demo_server
+       environment: "{{env_vars}}"
+        

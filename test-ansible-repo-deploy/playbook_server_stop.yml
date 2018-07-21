@@ -1,0 +1,11 @@
+ -
+  name: Export Environment Variable and Invoke java class
+  hosts: App_Server_{{ currentEnvironment }}
+ 
+  tasks:
+         
+
+     -
+       name: stop Server
+       command: sh stopServer.sh chdir=/home/osboxes/demo_server 
+        
